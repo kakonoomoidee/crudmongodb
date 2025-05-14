@@ -10,6 +10,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 // MongoDB Connection
+// Note: Ubah URL koneksi sesuai dengan konfigurasi MongoDB Anda caranya tinggal masuk "mongosh" di terminal
 mongoose.connect('mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.1', {
   useNewUrlParser: true,
   useUnifiedTopology: true
